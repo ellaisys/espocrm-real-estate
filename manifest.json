@@ -1,0 +1,11 @@
+{
+  "name": "Real Estate",
+  "version": "1.3.4",
+  "type": "extension",
+  "acceptableVersions": [
+    ">=5.2.0"
+  ],
+  "releaseDate": "2019-03-11",
+  "author": "EspoCRM",
+  "description": "Provides an ability to manage real estate properties and requests."
+}
