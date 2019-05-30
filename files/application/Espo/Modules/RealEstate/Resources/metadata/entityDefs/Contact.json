@@ -1,0 +1,32 @@
+{
+    "fields": {
+        "propertyRole": {
+            "type": "enum",
+            "notStorable": true,
+            "disabled": true,
+            "default": "",
+            "options": ["", "Landlord", "Tenant", "Property Manager"]
+        },
+        "opportunityRole": {
+            "default": "",
+            "options": ["", "Landlord", "Tenant", "Property Manager", "Requester"]
+        }
+    },
+    "links": {
+        "properties": {
+            "type": "hasMany",
+            "foreign": "contacts",
+            "entity": "RealEstateProperty"
+        },
+        "requestsPrimary": {
+            "type": "hasMany",
+            "foreign": "contact",
+            "entity": "RealEstateRequest"
+        },
+        "requests": {
+            "type": "hasMany",
+            "foreign": "contacts",
+            "entity": "RealEstateRequest"
+        }
+    }
+}
